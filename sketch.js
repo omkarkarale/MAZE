@@ -63,8 +63,8 @@ function setup(){
 function draw() {
   background(orange);
   textSize(15);
-  text(Sophia, 5, 30);
-  text(Trophy, 350, 355);
+  text("Sophia", 5, 30);
+  text("Trophy", 350, 355);
   drawSprites();
   if (sophia.isTouching(edges)) {
     sophia.bounce(edges);
@@ -109,7 +109,7 @@ function draw() {
     prize3.y = 120;
     score = 0;
   }
-  text((Score  + score)  + 3, 280, 15);
+  text(("Score:"  + score)  + "/3", 280, 15);
   if (sophia.isTouching(trophy)) {
     sophia.visible = false;
     sophia.x = 400;
@@ -120,7 +120,7 @@ function draw() {
     fill(yellow);
     textSize(50);
     textFont(Arial);
-    text(YOU WIN, 100, 200);
+    text("YOU WIN", 100, 200);
   }
   if (sophia.isTouching(prize1)) {
     prize1.visible = false;
