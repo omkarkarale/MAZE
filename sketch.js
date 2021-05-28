@@ -63,7 +63,7 @@ function setup(){
 function draw() {
   background("orange");
   textSize(15);
-  text("Sophia", 5, 30);
+  text("Player", 5, 30);
   text("Trophy", 350, 355);
   drawSprites();
   if (sophia.isTouching(edges)) {
