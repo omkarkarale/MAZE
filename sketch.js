@@ -81,7 +81,7 @@ function draw() {
   if (keyDown(RIGHT_ARROW)) {
     sophia.x = sophia.x + 3;
   }
-  if (sophia.isTouching(car1)sophia.isTouching(car2)sophia.isTouching(car3)sophia.isTouching(car4)sophia.isTouching(car5)sophia.isTouching(car6)sophia.isTouching(car7)sophia.isTouching(car8)sophia.isTouching(car9)sophia.isTouching(car10)sophia.isTouching(car11))  {
+  if (sophia.isTouching(car1)||sophia.isTouching(car2)||sophia.isTouching(car3)||sophia.isTouching(car4)||sophia.isTouching(car5)||sophia.isTouching(car6)||sophia.isTouching(car7)||sophia.isTouching(car8)||sophia.isTouching(car9)||sophia.isTouching(car10)||sophia.isTouching(car11))  {
     sophia.x = 15;
     sophia.y = 15;
     prize1.visible = true;
@@ -95,7 +95,7 @@ function draw() {
     prize3.y = 120;
     score = 0;
   }
-  if (sophia.isTouching(car12)sophia.isTouching(car13)sophia.isTouching(car14)sophia.isTouching(car15)sophia.isTouching(car16)sophia.isTouching(car17)sophia.isTouching(car18)sophia.isTouching(car19)sophia.isTouching(car20)sophia.isTouching(car21)sophia.isTouching(car22))  {
+  if (sophia.isTouching(car12)||sophia.isTouching(car13)||sophia.isTouching(car14)||sophia.isTouching(car15)||sophia.isTouching(car16)||sophia.isTouching(car17)||sophia.isTouching(car18)||sophia.isTouching(car19)||sophia.isTouching(car20)||sophia.isTouching(car21)||sophia.isTouching(car22))  {
     sophia.x = 15;
     sophia.y = 15;
     prize1.visible = true;
@@ -140,19 +140,19 @@ function draw() {
     prize3.y = 90;
     score = score + 1;
   }
-  if (laser1.isTouching(car19)  laser1.isTouching(car11)) {
+  if (laser1.isTouching(car19)||laser1.isTouching(car11)) {
     laser1.bounceOff(car19);
     laser1.bounceOff(car11);
   }
-  if (laser2.isTouching(car13)  laser2.isTouching(car11)) {
+  if (laser2.isTouching(car13)||laser2.isTouching(car11)) {
     laser2.bounceOff(car13);
     laser2.bounceOff(car11);
   }
-  if (laser3.isTouching(car19)  laser3.isTouching(car20)) {
+  if (laser3.isTouching(car19)||laser3.isTouching(car20)) {
     laser3.bounceOff(car19);
     laser3.bounceOff(car20);
   }
-  if (sophia.isTouching(laser1)  sophia.isTouching(laser2)  sophia.isTouching(laser3)) {
+  if (sophia.isTouching(laser1)||sophia.isTouching(laser2)||sophia.isTouching(laser3)) {
     sophia.x = 15;
     sophia.y = 15;
     prize1.visible = true;
