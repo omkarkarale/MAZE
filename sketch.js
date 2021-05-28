@@ -2,20 +2,20 @@ var laser1,laser2,laser3,score,prize1,prize2,prize3,trophy,sophia,car1,car2,car3
 
 function setup(){
   laser1 = createSprite(210, 110, 30, 5);
-  laser1.shapeColor = red;
+  laser1.shapeColor = "red";
   laser2 = createSprite(260, 260, 30, 5);
-  laser2.shapeColor = red;
+  laser2.shapeColor = "red";
   laser3 = createSprite(130, 265, 20, 5);
-  laser3.shapeColor = red;
+  laser3.shapeColor = "red";
   score = 0;
   prize3 = createSprite(15, 120, 10, 10);
-  prize3.shapeColor = yellow;
+  prize3.shapeColor = "yellow";
   prize2 = createSprite(360, 120, 10, 10);
-  prize2.shapeColor = yellow;
+  prize2.shapeColor = "yellow";
   prize1 = createSprite(160, 120, 10, 10);
-  prize1.shapeColor = yellow;
+  prize1.shapeColor = "yellow";
   trophy = createSprite(380, 380, 20, 20);
-  trophy.shapeColor = yellow;
+  trophy.shapeColor = "yellow";
   sophia = createSprite(10, 10, 15, 15);
   car1 = createSprite(88, 30, 10, 57);
   car2 = createSprite(30, 50, 60, 10);
@@ -39,7 +39,7 @@ function setup(){
   car20 = createSprite(85, 240, 10, 150);
   car21 = createSprite(135, 180, 10, 165);
   car22 = createSprite(320, 380, 10, 45);
-  sophia.shapeColor = blue;
+  sophia.shapeColor = "blue";
   laser1.velocityX = 5;
   laser1.velocityY = 0;
   laser2.velocityX = 4;
@@ -61,7 +61,7 @@ function setup(){
   edges.add(left_edge);
 }
 function draw() {
-  background(orange);
+  background("orange");
   textSize(15);
   text("Sophia", 5, 30);
   text("Trophy", 350, 355);
@@ -114,10 +114,10 @@ function draw() {
     sophia.visible = false;
     sophia.x = 400;
     sophia.y = 400;
-  laser1.setVelocity(0, 0);
-  laser2.setVelocity(0, 0);
-  laser3.setVelocity(0, 0);
-    fill(yellow);
+    laser1.setVelocity(0, 0);
+    laser2.setVelocity(0, 0);
+    laser3.setVelocity(0, 0);
+    fill("yellow");
     textSize(50);
     textFont(Arial);
     text("YOU WIN", 100, 200);
