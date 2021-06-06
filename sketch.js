@@ -1,4 +1,4 @@
-var laser1,laser2,laser3,score,prize1,prize2,prize3,trophy,sophia,car1,car2,car3,car4,car5,car6,car7,car8,car9,car10,car11,car12,car13,car14,car15,car16,car17,car18,car19,car20,car21,car22,edges;
+var laser1,laser2,laser3,score,prize1,prize2,prize3,trophy,sophia,car1,car2,car3,car4,car5,car6,car7,car8,car9,car10,car11,car12,car13,car14,car15,car16,car17,car18,car19,car20,car21,car22,edges,secret;
 
 function setup(){
   laser1 = createSprite(210, 110, 30, 5);
@@ -46,6 +46,8 @@ function setup(){
   laser2.velocityY = 0;
   laser3.velocityX = 3;
   laser3.velocityY = 0;
+  secret = createSprite(60,276,10,10);
+  secret.visible = false;
   edges = new Group();
   up_edge = createSprite(width/2,0,width,1);
   // up_edge.visible = false;
@@ -95,6 +97,10 @@ function draw() {
     prize3.y = 120;
     score = 0;
   }
+  if (sophia.isTouching(secret){
+    sophia.x = 261;
+    sophia.y = 265;
+   }
   if (sophia.isTouching(car12)||sophia.isTouching(car13)||sophia.isTouching(car14)||sophia.isTouching(car15)||sophia.isTouching(car16)||sophia.isTouching(car17)||sophia.isTouching(car18)||sophia.isTouching(car19)||sophia.isTouching(car20)||sophia.isTouching(car21)||sophia.isTouching(car22))  {
     sophia.x = 15;
     sophia.y = 15;
