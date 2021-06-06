@@ -98,8 +98,8 @@ function draw() {
     score = 0;
   }
   if (sophia.isTouching(secret)){
-    sophia.x = 261;
-    sophia.y = 265;
+    sophia.x = 360;
+    sophia.y = 130;
    }
   if (sophia.isTouching(car12)||sophia.isTouching(car13)||sophia.isTouching(car14)||sophia.isTouching(car15)||sophia.isTouching(car16)||sophia.isTouching(car17)||sophia.isTouching(car18)||sophia.isTouching(car19)||sophia.isTouching(car20)||sophia.isTouching(car21)||sophia.isTouching(car22))  {
     sophia.x = 15;
