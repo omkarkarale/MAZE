@@ -97,7 +97,7 @@ function draw() {
     prize3.y = 120;
     score = 0;
   }
-  if (sophia.isTouching(secret){
+  if (sophia.isTouching(secret)){
     sophia.x = 261;
     sophia.y = 265;
    }
